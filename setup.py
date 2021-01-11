@@ -14,5 +14,5 @@ setup(
     url='https://github.com/marxus/lambda-run',
     packages=['lambda_run'],
     extras_require={'cli': ['boto3', 'click']},
-    entry_points={'console_scripts': ['lambda-run=lambda_run.cli:main']}
+    entry_points={'console_scripts': ['lambda-run=lambda_run.cli:main [cli]']}
 )
