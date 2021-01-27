@@ -5,7 +5,7 @@ with open('README.md') as file:
 
 setup(
     name='lambda-run',
-    version='0.0.2',
+    version='0.0.3',
     author='Amit Marcus',
     author_email='marxus@gmail.com',
     description='run code or subprocess on aws lambda invoke context',

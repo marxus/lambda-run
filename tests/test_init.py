@@ -3,7 +3,11 @@ from lambda_run import wrap_handler
 py = lambda payload: {'lambdaRun': ['py', payload]}
 sh = lambda payload: {'lambdaRun': ['sh', payload]}
 
-lambda_handler = wrap_handler(lambda ev, ctx: 'OK')
+#lambda_handler = wrap_handler(lambda ev, ctx: 'OK')
+
+@wrap_handler
+def lambda_handler(ev, ctx):
+    return 'OK'
 
 
 def test_event():
